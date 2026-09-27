@@ -1,0 +1,12 @@
+name: HvHCpsLimiter
+version: 1.0.0
+main: jp.example.hvhcpslimiter.HvHCpsLimiterPlugin
+api-version: '1.21'
+commands:
+  hvhcps:
+    description: Reload or inspect HvH surround placement limiting.
+    usage: /hvhcps <reload|status>
+    permission: hvhcps.admin
+permissions:
+  hvhcps.admin:
+    default: op

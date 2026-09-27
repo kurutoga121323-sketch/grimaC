@@ -1,0 +1,17 @@
+name: GrimVersion
+version: ${version}
+main: jp.example.grimversionpaper.GrimVersionPaper
+api-version: '1.21'
+author: sushi
+description: Replaces the F3 server brand on Paper.
+commands:
+  grimversion:
+    description: Reload or show GrimVersion brand settings.
+    usage: /grimversion <reload|brand>
+permissions:
+  grimversion.reload:
+    description: Allows reloading GrimVersion config.
+    default: op
+  grimversion.brand:
+    description: Allows viewing and resending the current brand.
+    default: op

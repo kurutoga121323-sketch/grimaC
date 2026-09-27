@@ -1,0 +1,12 @@
+name: DuelClans
+version: 1.0.0
+main: jp.example.duelclans.DuelClansPlugin
+api-version: '1.21'
+commands:
+  duel: { description: Teleport to a duel position }
+  setduel1: { description: Set duel position 1, permission: duelclans.admin }
+  setduel2: { description: Set duel position 2, permission: duelclans.admin }
+  clan: { description: Clan management }
+  clancolor: { description: Change your clan color }
+permissions:
+  duelclans.admin: { default: op }

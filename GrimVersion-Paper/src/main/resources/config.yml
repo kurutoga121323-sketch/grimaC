@@ -1,0 +1,6 @@
+brand:
+  enabled: true
+  prefix: "Ez - "
+  text: "GrimHvH"
+  prefix-color: "f"
+  text-color: "c"

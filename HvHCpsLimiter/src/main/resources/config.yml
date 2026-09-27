@@ -1,0 +1,31 @@
+# Limits only immediate replacement of recently mined surround blocks.
+enabled: true
+
+# Empty means every world.
+worlds: []
+
+# Common surround materials. Add/remove names as needed.
+limited-blocks:
+  - OBSIDIAN
+  - CRYING_OBSIDIAN
+  - ENDER_CHEST
+  - RESPAWN_ANCHOR
+
+# A place only becomes eligible when the same block position was broken recently.
+break-window-ticks: 20
+
+# When a place is interrupted, this position refuses replacement for this long.
+gap-ticks: 5
+
+# Chance to create a small gap after a fresh break.
+base-chance: 0.18
+
+# Chance after the same position has repeated break/place cycles.
+repeat-chance: 0.35
+repeat-window-seconds: 4
+repeat-threshold: 2
+max-chance: 0.55
+
+ignore-creative: true
+send-actionbar: true
+message-cooldown-ticks: 40

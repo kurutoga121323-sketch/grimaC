@@ -1,0 +1,27 @@
+# Restore these worlds. Add world_nether/world_the_end too if you want them reset.
+worlds:
+  - world
+# Players stay connected and are temporarily moved here. If this world does not
+# exist, it is created automatically. Do not include it in "worlds".
+evacuation-world: worldreload_waiting
+# Saved backup name used by /worldreload time. Set with /worldreload use <name>.
+active-backup: default
+# 0 は定期復元を無効化。/worldreload time 2h で設定され、再起動後も維持されます。
+interval-seconds: 0
+# A scheduled restore sends a warning this many seconds beforehand.
+warning-seconds: 30
+
+# If a configured target is the primary world, restore terrain by copying blocks
+# from the backup world over time instead of unloading and swapping the folder.
+# This keeps players connected and lets the main world reset while the server is
+# still running. It is intended for HvH terrain, not full tile/entity rollback.
+live-terrain-primary-worlds: true
+live-terrain-chunks-per-tick: 1
+
+# Optional live terrain restore bounds. Set enabled to true for small arena maps
+# so old explored chunks in the backup are not restored.
+live-terrain-bounds:
+  enabled: false
+  center-x: 0
+  center-z: 0
+  radius-blocks: 300

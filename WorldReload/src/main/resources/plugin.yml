@@ -1,0 +1,13 @@
+name: WorldReload
+version: 1.1.0
+main: jp.example.worldreload.WorldReloadPlugin
+api-version: '1.21'
+authors: [WorldReload]
+commands:
+  worldreload:
+    description: Save and periodically restore world backups.
+    usage: /worldreload <save|use|time|restore|list|status|cancel|import> ...
+    permission: worldreload.admin
+permissions:
+  worldreload.admin:
+    default: op
